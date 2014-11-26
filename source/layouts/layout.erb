@@ -64,11 +64,10 @@ under the License.
 
         $(document).ready(function(){
           $("#Example").click(function() {
-            alert(ele.style.width);
-            if($("#dark-box").style.width != "50%")
-              $("#dark-box").animate({width:"50%"},200);
+            if($(".dark-box").style.width != "50%")
+              $(".dark-box").animate({width:"50%"},200);
             else
-              $("#dark-box").animate({width:"0%"},200);
+              $(".dark-box").animate({width:"0%"},200);
           });
         });
       </script>
