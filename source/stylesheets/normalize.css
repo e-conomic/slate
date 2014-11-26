@@ -399,7 +399,7 @@ table {
 
 /* Example */
 
-.Example { 
+#Example { 
   height: 104px; 
   width: 104px; 
   position: fixed; 
@@ -412,7 +412,7 @@ table {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.Example a { 
+#Example a { 
   display: block; 
   background: #f00; 
   height: 15px; 
@@ -428,6 +428,6 @@ table {
   border-right: solid 1px #fff;
 }
 
-.Example a:hover { 
+#Example a:hover { 
   background: #06c; 
 }
