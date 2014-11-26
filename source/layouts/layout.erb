@@ -37,7 +37,7 @@ under the License.
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
 
-        $(document).ready(function(){
+        $(function(){
           alert("1");
           $("#Example").click(function() {
             alert($(".dark-box").style.width);
