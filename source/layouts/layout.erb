@@ -40,7 +40,7 @@ under the License.
         $(document).ready(function(){
           alert("1");
           $("#Example").click(function() {
-            alert("2");
+            alert($(".dark-box").style.width);
             if($(".dark-box").style.width != "50%")
               $(".dark-box").animate({width:"50%"},200);
             else
@@ -90,7 +90,7 @@ under the License.
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <div id="code">
+        <div id="code" class="code">
           <a href="#" id="Example">Example</a>
         </div>
         <%= yield %>
