@@ -199,8 +199,9 @@ html, body {
       padding-left: $nav-padding + $nav-indent;
       font-size: 12px;
     }
+  }
 
-// Sub-Subheaders are the submenus that slide open
+  // Sub-Subheaders are the submenus that slide open
   // in the table of contents.
   .tocify-subheader .tocify-subheader {
     display: none; // tocify will override this when needed
@@ -210,7 +211,6 @@ html, body {
       padding-left: $nav-padding + $nav-indent;
       font-size: 12px;
     }
-    
   }
 
   .toc-footer {
