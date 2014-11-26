@@ -391,9 +391,15 @@ table {
     display: table;
 }
 
-/* Sticky */
+/* Code */
 
-#Example-button { 
+.code {
+    left: 92%;
+  }
+
+/* Example */
+
+.Example { 
   height: 104px; 
   width: 104px; 
   position: fixed; 
@@ -406,7 +412,7 @@ table {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-#Example-button a { 
+.Example a { 
   display: block; 
   background: #f00; 
   height: 15px; 
@@ -422,6 +428,6 @@ table {
   border-right: solid 1px #fff;
 }
 
-#Example-button a:hover { 
+.Example a:hover { 
   background: #06c; 
 }
