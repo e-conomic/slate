@@ -98,12 +98,13 @@ html, body {
 
   &>.search {
     position: relative;
+    margin-left: -30;
 
     input {
       background: #eee;
       border-width: 0 0 0 0;
       border-color: $search-box-border-color;
-      padding: 6px 0 6px 35px;
+      padding: 6px 0 6px 20px;
       @include box-sizing(border-box);
       margin: $nav-v-padding $nav-padding;
       width: $nav-width;
@@ -203,7 +204,7 @@ html, body {
 
   // Sub-Subheaders are the submenus that slide open
   // in the table of contents.
-  .tocify-item .tocify-subheader {
+  .tocify-subheader .tocify-item .tocify-subheader {
     display: none; // tocify will override this when needed
     background-color: $nav-subitem-bg;
     font-weight: 500;
@@ -339,6 +340,10 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // This is all the stuff with the light background in the left half of the page
 
+.content a {
+  color: #f39200;
+}
+
 .content {
   // to place content above the dark box
   position: relative;
@@ -349,10 +354,6 @@ html, body {
     display: block;
     clear: both;
   }
-
-&>a {
-  color: #f39200;
-}
 
   &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
     margin-right: $examples-width;
