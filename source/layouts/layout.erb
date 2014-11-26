@@ -48,6 +48,7 @@ under the License.
         $(document).ready(function(){
           $("#Example-button").click(function() {
             $("#dark-box").animate({width:"50%"},200);
+            alert("Hello");
           }),
         });
       </script>
@@ -93,8 +94,8 @@ under the License.
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <div id="code" class="code">
-          <a href="/Example/" id="Example">Example</a>
+        <div id="code">
+          <a href="#" id="Example">Example</a>
         </div>
         <%= yield %>
         <% current_page.data.includes && current_page.data.includes.each do |include| %>
