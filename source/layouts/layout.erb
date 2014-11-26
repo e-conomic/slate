@@ -60,12 +60,15 @@ under the License.
           }
         }
 
-        /*$(document).ready(function(){
-          $("#Example-button").click(function() {
-            $("#dark-box").animate({width:"50%"},200);
+        $(document).ready(function(){
+          $("#Example").click(function() {
             alert("Hello");
-          }),
-        });*/
+            if($("#dark-box").style.width != "50%")
+              $("#dark-box").animate({width:"50%"},200);
+            else
+              $("#dark-box").animate({width:"0%"},200);
+          });
+        });
       </script>
     <% end %>
   </head>
@@ -110,7 +113,7 @@ under the License.
       <div class="dark-box"></div>
       <div class="content">
         <div id="code">
-          <a href="#" id="Example" onclick="ToggleExample();">Example</a>
+          <a href="#" id="Example">Example</a>
         </div>
         <%= yield %>
         <% current_page.data.includes && current_page.data.includes.each do |include| %>
