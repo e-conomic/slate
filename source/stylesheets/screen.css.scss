@@ -98,15 +98,14 @@ html, body {
 
   &>.search {
     position: relative;
-    margin-left: -30;
 
     input {
       background: #eee;
       border-width: 0 0 0 0;
       border-color: $search-box-border-color;
-      padding: 6px 0 6px 20px;
+      padding: 6px 0 6px 35px;
       @include box-sizing(border-box);
-      margin: $nav-v-padding $nav-padding;
+      margin: $nav-v-padding 0;
       width: $nav-width;
       outline: none;
       color: $nav-text;
@@ -140,7 +139,7 @@ html, body {
       margin-bottom: 1em;
     }
 
-    @include embossed-bg;
+    /*@include embossed-bg;*/
 
     li {
       margin: 1em $nav-padding;
