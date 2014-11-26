@@ -49,7 +49,7 @@ under the License.
         {
           var ele = document.getElementById("dark-box");
 
-          alert(ele.style.width);
+          
           if(ele.style.width != "50%")
           {
             alert("animate 50%");
@@ -64,7 +64,7 @@ under the License.
 
         $(document).ready(function(){
           $("#Example").click(function() {
-            alert("Hello");
+            alert(ele.style.width);
             if($("#dark-box").style.width != "50%")
               $("#dark-box").animate({width:"50%"},200);
             else
