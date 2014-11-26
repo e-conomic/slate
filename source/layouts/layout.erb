@@ -36,6 +36,14 @@ under the License.
         $(function() {
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
+
+        $(document).ready(function(){
+          $("#page-wrapper").toggle(function(){
+            $("#dark-box").animate({width:"0%"},200);  
+          },function(){
+            $("#dark-box").animate({width:"50%"},200);    
+          });
+        });
       </script>
     <% end %>
   </head>
