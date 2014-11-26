@@ -400,8 +400,8 @@ table {
 /* Example */
 
 #Example { 
-  height: 104px; 
-  width: 104px; 
+  /*height: 104px; 
+  width: 104px; */
   position: fixed; 
   top: 40%; 
   z-index: 999;
@@ -412,8 +412,8 @@ table {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   display: block; 
   background: #f00; 
-  /*ight: 15px; 
-  width: 70px; */
+  height: 15px; 
+  width: 70px; 
   padding: 8px 16px;
   color: #fff; 
   font-family: Arial, sans-serif; 

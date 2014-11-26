@@ -37,33 +37,10 @@ under the License.
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
 
-        /*$(document).ready(function(){
-          $("#page-wrapper").toggle(function(){
-            $("#dark-box").animate({width:"0%"},200);  
-          },function(){
-            $("#dark-box").animate({width:"50%"},200);    
-          });
-        });*/
-
-        function ToggleExample()
-        {
-          var ele = document.getElementById("dark-box");
-
-          
-          if(ele.style.width != "50%")
-          {
-            alert("animate 50%");
-            ele.animate({width:"50%"},200);
-          }
-          else
-          {
-            alert("animate 0%");
-            ele.animate({width:"0%"},200);
-          }
-        }
-
         $(document).ready(function(){
+          alert("1");
           $("#Example").click(function() {
+            alert("2");
             if($(".dark-box").style.width != "50%")
               $(".dark-box").animate({width:"50%"},200);
             else
