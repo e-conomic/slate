@@ -48,14 +48,16 @@ under the License.
         function ToggleExample()
         {
           var ele = document.getElementById("dark-box");
-          alert("Hello");
 
+          alert(ele.style.width);
           if(ele.style.width != "50%")
           {
+            alert("animate 50%");
             ele.animate({width:"50%"},200);
           }
           else
           {
+            alert("animate 0%");
             ele.animate({width:"0%"},200);
           }
         }
