@@ -203,7 +203,7 @@ html, body {
 
   // Sub-Subheaders are the submenus that slide open
   // in the table of contents.
-  .tocify-subheader > .tocify-subheader {
+  .tocify-subheader > .tocify-subheader li {
     display: none; // tocify will override this when needed
     background-color: $nav-subitem-bg;
     color: red;
