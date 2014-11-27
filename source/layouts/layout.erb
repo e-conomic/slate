@@ -39,15 +39,10 @@ under the License.
 
         function ToggleExamples()
         {
-          alert("Hej");
-          var darkBox = document.getElementById("dark-box");
-
-          alert(darkBox.style.width);
-
-          if(darkBox.style.width == "15")
-            darkBox.animate({width:"50%"},200);
+          if($("#dark-box")[0].style.width != "50%")
+            $("#dark-box").animate({width:"50%"},200);
           else
-            darkBox.animate({width:"15px"},200);
+            $("#dark-box").animate({width:"50px"},200);
         }
 
         /*$(function(){
