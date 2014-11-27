@@ -418,13 +418,13 @@ html, body {
     content: "// ";
     color: #f39200;
     margin-left: -20px;
-    display: table;
+    //display: table;
   }
 
-  h2:after {
+  /*h2:after {
     content: "";
     display: table;
-  }
+  }*/
 
   // h2s right after h1s should bump right up
   // against the h1s.
