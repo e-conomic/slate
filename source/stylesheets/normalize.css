@@ -410,7 +410,7 @@ table {
   -o-transform: rotate(-90deg); 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   display: block; 
-  background: #f00; 
+  background: #f39200; 
   height: 15px; 
   width: 70px; 
   padding: 8px 16px;
@@ -425,5 +425,5 @@ table {
 }
 
 #Example:hover { 
-  background: #06c; 
+  background: #333; /*#06c; */
 }
