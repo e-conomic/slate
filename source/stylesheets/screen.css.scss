@@ -201,7 +201,7 @@ html, body {
 
     &> .tocify-subheader a {
       font-size: 10px;
-      font-variant: text-transform: uppercase;
+      text-transform: uppercase;
       padding-left: $nav-padding + $nav-indent;
     }
   }
