@@ -37,7 +37,20 @@ under the License.
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
 
-        $(function(){
+        function ToggleExamples()
+        {
+          alert("Hej");
+          var darkBox = document.getElementById("dark-box");
+
+          alert(darkBox.style.width);
+
+          if(darkBox.style.width == "15")
+            darkBox.animate({width:"50%"},200);
+          else
+            darkBox.animate({width:"15px"},200);
+        }
+
+        /*$(function(){
           alert("1");
           $("#Example").click(function() {
             alert($(".dark-box").style.width);
@@ -46,7 +59,7 @@ under the License.
             else
               $(".dark-box").animate({width:"0%"},200);
           });
-        });
+        });*/
       </script>
     <% end %>
   </head>
@@ -90,15 +103,16 @@ under the License.
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <div id="code">
-          <a href="#" id="Example">Example</a>
-        </div>
+        
         <%= yield %>
         <% current_page.data.includes && current_page.data.includes.each do |include| %>
           <%= partial "includes/#{include}" %>
         <% end %>
       </div>
       <div class="dark-box">
+        <div id="code">
+          <a href="#" id="Example" onclick="javascript:ToggleExamples();">Example</a>
+        </div>
         <% if language_tabs %>
           <div class="lang-selector">
             <% language_tabs.each do |lang| %>
