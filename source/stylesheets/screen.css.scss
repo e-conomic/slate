@@ -414,15 +414,15 @@ html, body {
     z-index: 9999;
   }
 
-  h1:after {
-    content: "// ";
-    display: table;
-  }
-
   h2:before {
     content: "// ";
     color: #f39200;
     margin-left: -20px;
+    display: table;
+  }
+
+  h2:after {
+    content: "";
     display: table;
   }
 
