@@ -400,11 +400,10 @@ table {
 /* Example */
 
 #Example { 
-  /*height: 104px; 
-  width: 104px; */
   position: fixed; 
   top: 40%; 
-  z-index: 999;
+  /*z-index: 10;*/
+  right: 0;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg); 
   -moz-transform: rotate(-90deg); 

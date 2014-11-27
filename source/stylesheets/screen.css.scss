@@ -345,7 +345,29 @@ html, body {
     clear: both;
   }
 
-  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+  &>h1, &>h2{
+    margin-right: $examples-width;
+    padding: 0 $main-padding;
+    @include box-sizing(border-box);
+    display: block;
+    @include text-shadow($main-embossed-text-shadow);
+
+    @extend %left-col;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #eee;
+    z-index: 9999;
+  }
+
+  &>h1, &>h2 :before,
+  &>h1, &>h2 :after{
+    content: '';
+    display: table;
+  }
+
+
+  &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
     margin-right: $examples-width;
     padding: 0 $main-padding;
     @include box-sizing(border-box);
