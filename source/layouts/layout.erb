@@ -36,24 +36,6 @@ under the License.
         $(function() {
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
-
-        function ToggleExamples()
-        {
-          if($("#dark-box").css('width') != "15px")
-          {
-            $("#dark-box").animate({width:$('#dark-box').attr('data-css-width')},200);
-            $("p").animate({width:"97%"},200);
-            $("aside").animate({width:"97%"},200);
-            $("table").animate({width:"97%"},200);
-          }
-          else
-          {
-            $("#dark-box").attr('data-css-width', $("#dark-box").css('width')).animate({width:"50%"},200);
-            $("p").animate({width:"50%"},200);
-            $("aside").animate({width:"50%"},200);
-            $("table").animate({width:"50%"},200);
-          }
-        }
       </script>
     <% end %>
   </head>
@@ -104,9 +86,6 @@ under the License.
         <% end %>
       </div>
       <div class="dark-box" id="dark-box">
-        <!--<div id="code">-->
-          <a href="#" id="Example" onclick="javascript:ToggleExamples();">Example</a>
-        <!--</div>-->
         <% if language_tabs %>
           <div class="lang-selector">
             <% language_tabs.each do |lang| %>

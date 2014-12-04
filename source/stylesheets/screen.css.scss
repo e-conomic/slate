@@ -385,11 +385,11 @@ html, body {
     @include background-image(
       linear-gradient(top, #fff, #f9f9f9)
     );*/
-    position: -webkit-sticky;
+    /*position: -webkit-sticky;
     position: sticky;
     top: 0;
     //background: #eee;
-    z-index: 9999;
+    z-index: 9999;*/
   }
 
   h1:first-child, div:first-child + h1 {
@@ -413,11 +413,11 @@ html, body {
     @include background-image(
       linear-gradient(top, rgba(#fff,0.4), rgba(#fff, 0))
     );
-    position: -webkit-sticky;
+    /*position: -webkit-sticky;
     position: sticky;
     top: 0;
     //background: #eee;
-    z-index: 9999;
+    z-index: 9999;*/
   }
 
   h2:before {
