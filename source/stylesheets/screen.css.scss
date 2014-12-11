@@ -385,11 +385,11 @@ html, body {
     @include background-image(
       linear-gradient(top, #fff, #f9f9f9)
     );*/
-    /*position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     //background: #eee;
-    z-index: 9999;*/
+    z-index: 9999;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -413,11 +413,11 @@ html, body {
     @include background-image(
       linear-gradient(top, rgba(#fff,0.4), rgba(#fff, 0))
     );
-    /*position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     //background: #eee;
-    z-index: 9999;*/
+    z-index: 9999;
   }
 
   h2:before {
@@ -427,10 +427,10 @@ html, body {
     //display: table;
   }
 
-  /*h2:after {
+  h2:after {
     content: "";
     display: table;
-  }*/
+  }
 
   // h2s right after h1s should bump right up
   // against the h1s.
@@ -521,7 +521,7 @@ html, body {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     margin-left: $main-padding;
-    width:56%;
+    margin-right: $main-padding;
     border-radius: 5px;
 
     background: $aside-notice-bg;

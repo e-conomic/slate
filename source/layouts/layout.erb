@@ -36,6 +36,12 @@ under the License.
         $(function() {
           setupLanguages(<%= language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>);
         });
+
+        $(document).ready(function() {
+          $('#h1').Stickyfill();
+          $('#h2').Stickyfill();
+        });
+
       </script>
     <% end %>
   </head>
