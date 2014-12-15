@@ -521,7 +521,7 @@ html, body {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     margin-left: $main-padding;
-    margin-right: $main-padding;
+    margin-right: $main-padding + $examples-width;
     border-radius: 5px;
 
     background: $aside-notice-bg;
