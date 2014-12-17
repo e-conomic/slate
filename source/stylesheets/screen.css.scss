@@ -575,13 +575,15 @@ html, body {
 // This is all the stuff that appears in the right half of the page
 
 .content {
-    pre, blockquote {
+    blockquote {
+    background-color: $code-bg;
     color: #fff;
 
     padding: 2em $main-padding;
     margin: 0;
     width: $examples-width;
 
+    float:right;
     clear:right;
 
     @include box-sizing(border-box);
@@ -598,9 +600,7 @@ html, body {
     }
 
     blockquote {
-      background-color: $code-bg;
-      float:right;
-
+            
       &>p {
         background-color: $code-annotation-bg;
         border-radius: 5px;
@@ -612,6 +612,14 @@ html, body {
     }
   }
 
+  .highlight {
+    padding: 3px;
+    border-radius: 3px;
+    @extend %break-words;
+    @extend %code-font;
+    background-color: $main-bg;
+  }
+
   .highlight, .highlight .w {
     background-color: $code-bg;
     float:right;
@@ -620,10 +628,12 @@ html, body {
 
   .highlight.inline, .highligt.inline .w {
     background-color: $main-bg;
+    float:none;
   }
 
   .highlight.plaintext, .highligt.plaintext .w {
     background-color: $main-bg;
+    float:none;
   }
 }
 
