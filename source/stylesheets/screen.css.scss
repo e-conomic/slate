@@ -513,6 +513,10 @@ html, body {
     @extend %code-font;
   }
 
+  .prettyprint {
+    background-color: rgba(0,0,0,0.05);
+  }
+
   aside {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -606,6 +610,20 @@ html, body {
         border-bottom: 1px solid #404040;
       }
     }
+  }
+
+  .highlight, .highlight .w {
+    background-color: $code-bg;
+    float:right;
+    clear:right;
+  }
+
+  .highlight.inline, .highligt.inline .w {
+    background-color: $main-bg;
+  }
+
+  .highlight.plaintext, .highligt.plaintext .w {
+    background-color: $main-bg;
   }
 }
 
