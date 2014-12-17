@@ -579,7 +579,9 @@ html, body {
 // This is all the stuff that appears in the right half of the page
 
 .content {
-    pre,blockquote {
+  blockquote {
+    float:right;
+    background-color: $code-bg;
     color: #fff;
 
     padding: 2em $main-padding;
@@ -602,9 +604,6 @@ html, body {
     }
 
     blockquote {
-      float:right;
-      background-color: $code-bg;
-
       &>p {
         background-color: $code-annotation-bg;
         border-radius: 5px;
@@ -613,6 +612,30 @@ html, body {
         border-top: 1px solid #000;
         border-bottom: 1px solid #404040;
       }
+    }
+  }
+
+  pre {
+    background-color: $code-bg;
+    color: #fff;
+
+    padding: 2em $main-padding;
+    margin: 0;
+    width: $examples-width;
+    
+    clear:right;
+
+    @include box-sizing(border-box);
+    @include text-shadow(0px 1px 2px rgba(0,0,0,0.4));
+
+    @extend %right-col;
+
+    &>p { margin: 0; }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: dashed 1px #ccc;
     }
   }
   
@@ -633,13 +656,13 @@ html, body {
   .highlight.inline, .highligt.inline .w {
     background-color: $main-bg;
     float:none;
-    //color: #58ACFA;
+    color: #58ACFA;
   }
 
   .highlight.plaintext, .highligt.plaintext .w {
     background-color: $main-bg;
     float:none;
-    //color: #58ACFA;
+    color: #58ACFA;
   }
 }
 
