@@ -363,8 +363,29 @@ html, body {
     @extend %left-col;
   }
 
+  // This is the http method types
+  .get, .post, .put, .delete {
+    padding: 3px 6px;
+    margin-right: 3px;
+    text-shadow: none;
+    border-radius: 3px;
+    color: #fff;
+  }
+
   .get {
-    background-color:green;
+    background-color: #1E90FF  ;
+  }
+
+  .post {
+    background-color: #32CD32  ;
+  }
+
+  .put {
+    background-color: #f39200  ;
+  }
+
+  .delete {
+    background-color: #CD5C5C  ;
   }
 
   &>ul, &>ol {
