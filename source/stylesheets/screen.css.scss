@@ -563,8 +563,6 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // This is all the stuff that appears in the right half of the page
 
-
-
 .content {
     blockquote {
     background-color: $code-bg;
@@ -598,7 +596,7 @@ html, body {
     @extend %code-font;
   }
 
-  .highlight javascript {
+  .highlight.javascript {
     border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
