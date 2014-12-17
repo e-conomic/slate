@@ -598,10 +598,6 @@ html, body {
   }
 
   .highlight.javascript {
-    border-radius: 3px;
-    @extend %break-words;
-    @extend %code-font;
-  
     background-color: $code-bg;
     color: #fff;
 
@@ -624,10 +620,6 @@ html, body {
       text-decoration: none;
       border-bottom: dashed 1px #ccc;
     }
-  }
-
-  .highlight javascript {
-    @extend %code-font;
   }
 
   blockquote {
