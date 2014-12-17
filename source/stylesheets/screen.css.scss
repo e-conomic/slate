@@ -594,6 +594,7 @@ html, body {
     border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
+    background-color: $main-bg;
   }
 
   .highlight.javascript {
