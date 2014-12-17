@@ -506,14 +506,6 @@ html, body {
     max-width: 100%;
   }
 
-  code {
-    background-color: rgba(0,0,0,0.05);
-    padding: 3px;
-    border-radius: 3px;
-    @extend %break-words;
-    @extend %code-font;
-  }
-
   aside {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -599,7 +591,18 @@ html, body {
     }
   }
 
+  .highlight {
+    padding: 3px;
+    border-radius: 3px;
+    @extend %break-words;
+    @extend %code-font;
+  }
+
   .highlight javascript {
+    border-radius: 3px;
+    @extend %break-words;
+    @extend %code-font;
+  
     background-color: $code-bg;
     color: #fff;
 
