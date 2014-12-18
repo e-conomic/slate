@@ -545,7 +545,7 @@ html, body {
     @extend %break-words;
     @extend %code-font;
     float:none;
-    color: #333
+    color: #333;
     margin-right: $examples-width;
     padding: 0 $main-padding;
     @include box-sizing(border-box);
