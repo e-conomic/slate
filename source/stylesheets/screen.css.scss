@@ -556,6 +556,11 @@ html, body {
     width: $inlineCode-width;
   }
 
+  .codeimage {
+    font: 10px/5px monospace;
+    
+  }
+
   aside {
     padding-top: 1em;
     padding-bottom: 1em;
