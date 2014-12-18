@@ -545,6 +545,7 @@ html, body {
     border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
+    float:none;
   }
 
   /*.prettyprint {
