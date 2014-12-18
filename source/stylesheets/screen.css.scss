@@ -553,12 +553,8 @@ html, body {
     @include text-shadow($main-embossed-text-shadow);
     @extend %left-col;
     margin: 10px;
-    width: 59%;
+    width: $inlineCode-width;
   }
-
-  /*.prettyprint {
-    background-color: rgba(0,0,0,0.05);
-  }*/
 
   aside {
     padding-top: 1em;
