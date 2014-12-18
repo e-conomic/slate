@@ -552,6 +552,8 @@ html, body {
     display: block;
     @include text-shadow($main-embossed-text-shadow);
     @extend %left-col;
+    margin: 10px;
+    width: 59%;
   }
 
   /*.prettyprint {
