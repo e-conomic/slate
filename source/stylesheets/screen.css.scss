@@ -541,18 +541,19 @@ html, body {
 
   .inlinecode {
     background-color: rgba(0,0,0,0.05);
-    border-radius: 3px;
     @extend %break-words;
     @extend %code-font;
     float:none;
     color: #333;
-    margin-right: $examples-width;
-    padding: 0 $main-padding;
+    border-color: #ccc;
+    margin-right: $examples-width + 5%;
+    padding: 10px $main-padding;
     @include box-sizing(border-box);
     display: block;
     @include text-shadow($main-embossed-text-shadow);
     @extend %left-col;
-    margin: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     width: $inlineCode-width;
   }
 
