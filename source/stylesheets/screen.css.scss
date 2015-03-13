@@ -549,6 +549,24 @@ html, body {
     margin-right: $examples-width + 5%;
     padding: 10px $main-padding;
     @include box-sizing(border-box);
+    display: inline;
+    @include text-shadow($main-embossed-text-shadow);
+    @extend %left-col;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: $inlineCode-width;
+  }
+
+  .blockcode {
+    background-color: rgba(0,0,0,0.05);
+    @extend %break-words;
+    @extend %code-font;
+    float:none;
+    color: #333;
+    border-color: #ccc;
+    margin-right: $examples-width + 5%;
+    padding: 10px $main-padding;
+    @include box-sizing(border-box);
     display: block;
     @include text-shadow($main-embossed-text-shadow);
     @extend %left-col;
