@@ -546,10 +546,10 @@ html, body {
     float:none;
     color: #333;
     border-color: #ccc;
-    margin-right: $examples-width + 5%;
+    //margin-right: $examples-width + 5%;
     padding: 10px $main-padding;
     @include box-sizing(border-box);
-    display: inline;
+    display: -webkit-inline-box;
     @include text-shadow($main-embossed-text-shadow);
     @extend %left-col;
     margin-left: 20px;
