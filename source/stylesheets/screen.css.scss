@@ -364,7 +364,7 @@ html, body {
   }
 
   // This is the http method types
-  .get, .post, .put, .delete {
+  .get, .post, .put, .delete, .patch {
     padding: 3px 6px;
     margin-right: 3px;
     text-shadow: none;
@@ -382,6 +382,10 @@ html, body {
 
   .put {
     background-color: #f39200  ;
+  }
+
+  .patch {
+    background-color: #E4F300  ;
   }
 
   .delete {
