@@ -510,7 +510,7 @@ html, body {
     }
 
     tr:nth-child(odd)>td {
-      background-color: lighten($main-bg,4.2%);
+      background-color: #f39200;
     }
 
     tr:nth-child(even)>td {
