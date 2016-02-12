@@ -171,6 +171,11 @@ html, body {
     transition-duration: 230ms;
   }
 
+  .tocify-item a:hover {
+    background-color: $nav-hover-bg;
+    color: $nav-active-text;
+  }
+
   // This is the currently selected ToC entry
   .tocify-focus {
     box-shadow: 0px 0px 0px $nav-active-shadow;
@@ -190,8 +195,8 @@ html, body {
     }
 
     &> .tocify-subheader a {
-      font-size: 10px;
-      text-transform: uppercase;
+      font-size: 11px;
+      //text-transform: uppercase;
       padding-left: $nav-padding + $nav-indent;
     }
 
@@ -199,6 +204,12 @@ html, body {
       content: "- ";
       margin-left: -5px;
       //display: table;
+    }
+
+    &> .tocify-subheader a:hover {
+      display: block;
+      background-color: $nav-hover-bg;
+      color: $nav-active-text;
     }
   }
 
@@ -364,23 +375,28 @@ html, body {
   }
 
   .get {
-    background-color: #1E90FF  ;
+    background-color: #1E90FF;
+    font-size: 13px;
   }
 
   .post {
-    background-color: #32CD32  ;
+    background-color: #32CD32;
+    font-size: 13px;
   }
 
   .put {
-    background-color: #f39200  ;
+    background-color: #f39200;
+    font-size: 13px;
   }
 
   .patch {
-    background-color: #E4F300  ;
+    background-color: #E4F300;
+    font-size: 13px;
   }
 
   .delete {
-    background-color: #CD5C5C  ;
+    background-color: #CD5C5C;
+    font-size: 13px;
   }
 
   &>ul, &>ol {
@@ -400,9 +416,7 @@ html, body {
     padding-bottom: 0.5em;
     /* border-bottom: 1px solid #ccc; */
     margin-bottom: $h1-margin-bottom;
-    margin-top: 2em;
-    border-top: 1px solid #ddd;
-    background-image: linear-gradient(to bottom, #fff, #f9f9f9);
+    margin-top: 2em;   
   }
 
   h1:first-child, div:first-child + h1 {
@@ -451,7 +465,7 @@ html, body {
   }
 
   h4, h5, h6 {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   hr {
@@ -563,6 +577,9 @@ html, body {
   pre>code {
     background-color: transparent;
     padding: 0;
+    word-break: break-all;
+    display: block;
+    white-space: pre-wrap;
   }
 
   aside {
@@ -633,7 +650,7 @@ html, body {
     width: $examples-width;
     
     clear:right;
-
+    @extend %break-words;
     box-sizing: border-box;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
 
@@ -725,5 +742,15 @@ html, body {
 }
 
 .highlight, .highlight .w {
+  background-color: $code-bg;
+}
+
+.highlight .err {
+  color: #d0d0d0;
+  background-color: $code-bg;
+}
+
+.highlight .mf, .highlight .mi {
+  color: #d0d0d0;
   background-color: $code-bg;
 }

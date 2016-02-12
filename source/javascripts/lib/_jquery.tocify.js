@@ -400,7 +400,7 @@
                 "data-unique": hashValue
 
             }).append($("<a/>", {
-
+                "title": self.text(),
                 "text": self.text()
 
             }));
