@@ -17,6 +17,7 @@ set :fonts_dir, 'fonts'
 
 # Activate the syntax highlighter
 activate :syntax
+activate :sprockets
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 version', 'Firefox ESR']
@@ -29,12 +30,16 @@ activate :relative_assets
 set :relative_links, true
 
 # Build Configuration
+configure :staging do
+  activate :asset_host, :host => '//restdocs-staging.e-conomic.com'
+end
+
+configure :production do
+  activate :asset_host, :host => '//restdocs.e-conomic.com'
+end
+
 configure :build do
-  # If you're having trouble with Middleman hanging, commenting
-  # out the following two lines has been known to help
   activate :minify_css
   activate :minify_javascript
-  # activate :relative_assets
-  # activate :asset_hash
-  # activate :gzip
+  activate :asset_hash
 end
