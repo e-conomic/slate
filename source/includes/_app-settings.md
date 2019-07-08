@@ -6,15 +6,79 @@ The settings are a key-value set where the key is a string and the setting has t
 
 ### <span class='get'>GET</span> /app-settings
 
-<!_app-settings.get.schema.md!>
+#### Schema name
+
+[app-settings.get.schema.json](https://restapi.e-conomic.com/schema/app-settings.get.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| agreement| string| uri| A reference to the agreements app settings collection.|
+| user| string| uri| A reference to the user's app settings collection.|
+
+
 
 ### <span class='get'>GET</span> /app-settings/agreement
 
-<!_app-settings.agreement.get.schema.md!>
+#### Schema name
+
+[app-settings.agreement.get.schema.json](https://restapi.e-conomic.com/schema/app-settings.agreement.get.schema.json)
+
+#### Return type
+
+This method returns a [collection](#collections-vs--resources) of items. The containing items are described below.
+
+#### Required properties
+
+content, self, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the app setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='get'>GET</span> /app-settings/agreement/:settingId
 
-<!_app-settings.agreement.settingId.get.schema.md!>
+#### Schema name
+
+[app-settings.agreement.settingId.get.schema.json](https://restapi.e-conomic.com/schema/app-settings.agreement.settingId.get.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+#### Required properties
+
+content, self, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the app setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='put'>PUT</span> /app-settings/agreement/:settingId
 
@@ -47,7 +111,30 @@ $(document).ready(function () {
 });
 ```
 
-<!_app-settings.agreement.settingId.put.schema.md!>
+#### Schema name
+
+[app-settings.agreement.settingId.put.schema.json](https://restapi.e-conomic.com/schema/app-settings.agreement.settingId.put.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+#### Required properties
+
+content, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='delete'>DELETE</span> /app-settings/agreement/:settingId
 
@@ -55,11 +142,57 @@ This endpoint deletes an app setting from the agreements app settings.
 
 ### <span class='get'>GET</span> /app-settings/user
 
-<!_app-settings.user.get.schema.md!>
+#### Schema name
+
+[app-settings.user.get.schema.json](https://restapi.e-conomic.com/schema/app-settings.user.get.schema.json)
+
+#### Return type
+
+This method returns a [collection](#collections-vs--resources) of items. The containing items are described below.
+
+#### Required properties
+
+content, self, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the app setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='get'>GET</span> /app-settings/user/:settingId
 
-<!_app-settings.user.settingId.get.schema.md!>
+#### Schema name
+
+[app-settings.user.settingId.get.schema.json](https://restapi.e-conomic.com/schema/app-settings.user.settingId.get.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+#### Required properties
+
+content, self, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the app setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='put'>PUT</span> /app-settings/user/:settingId
 
@@ -92,7 +225,30 @@ $(document).ready(function () {
 });
 ```
 
-<!_app-settings.user.settingId.put.schema.md!>
+#### Schema name
+
+[app-settings.user.settingId.put.schema.json](https://restapi.e-conomic.com/schema/app-settings.user.settingId.put.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+#### Required properties
+
+content, settingKey
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Description |
+| ---- | ---- | ------ | ----------- |
+| content| object| | The setting payload.|
+| self| string| uri| A unique link reference to the setting item.|
+| settingKey| string| | A unique key.|
+
+
 
 ### <span class='delete'>DELETE</span> /app-settings/user/:settingId
 

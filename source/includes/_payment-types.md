@@ -20,10 +20,56 @@ ocrLineMessage: OCR/optional message must be either a number (2-16 digits) or el
 
 This endpoint provides you with a collection of payment types. 
 
-<!_payment-types.get.schema.md!>
+#### Schema name
+
+[payment-types.get.schema.json](https://restapi.e-conomic.com/schema/payment-types.get.schema.json)
+
+#### Return type
+
+This method returns a [collection](#collections-vs--resources) of items. The containing items are described below.
+
+#### Required properties
+
+name, self
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Max length | Min length | Min value | Description |
+| ---- | ---- | ------ | ---------- | ---------- | --------- | ----------- |
+| name| string| | 50| 1| | The payment type name.|
+| paymentTypeNumber| integer| | | | 1| The payment type number is a positive unique numerical identifier.|
+| self| string| uri| | | | A unique link reference to the payment type item.|
+
+
 
 ### <span class='get'>GET</span> /payment-types/:paymentTypeNumber
 
 Returns a specific payment type.
 
-<!_payment-types.paymentTypeNumber.get.schema.md!>
+#### Schema name
+
+[payment-types.paymentTypeNumber.get.schema.json](https://restapi.e-conomic.com/schema/payment-types.paymentTypeNumber.get.schema.json)
+
+#### Return type
+
+This method returns a single object
+
+#### Required properties
+
+name, self
+
+
+
+
+#### Properties
+
+| Name | Type | Format | Max length | Min length | Min value | Description |
+| ---- | ---- | ------ | ---------- | ---------- | --------- | ----------- |
+| name| string| | 50| 1| | The payment type name.|
+| paymentTypeNumber| integer| | | | 1| The payment type number is a positive unique numerical identifier.|
+| self| string| uri| | | | A unique link reference to the payment type item.|
+
+
