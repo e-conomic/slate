@@ -5,7 +5,7 @@ language_tabs:
   - javascript
 
 toc_footers:
-  - <a href='http://www.e-conomic.dk'>&copy; e-conomic</a>
+  - <a href='https://www.e-conomic.com'>&copy; e-conomic</a>
   - <a href='https://www.e-conomic.com/developer'>Developer Portal</a>
 
 includes:
