@@ -29,17 +29,7 @@ end
 activate :relative_assets
 set :relative_links, true
 
-# Build Configuration
-configure :staging do
-  activate :asset_host, :host => '//restdocs-staging.e-conomic.com'
-end
-
-configure :production do
-  activate :asset_host, :host => '//restdocs.e-conomic.com'
-end
-
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
 end
