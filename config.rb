@@ -14,6 +14,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
+set :build_dir, '/workspace/build'
 
 # Activate the syntax highlighter
 activate :syntax
